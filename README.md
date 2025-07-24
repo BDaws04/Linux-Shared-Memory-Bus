@@ -50,7 +50,7 @@ This project implements a shared memory circular buffer designed for fast messag
 - Child reads the same number of messages from the buffer.
 - Both measure their individual latency in nanoseconds.
 - The circular buffer uses head/tail indices and wrap-around logic to manage slots.
-- 
+  
 ### Performance Highlights
 
 - Utilizes POSIX shared memory (shm_open) for efficient inter-process communication.
