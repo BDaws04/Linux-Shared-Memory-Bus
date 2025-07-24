@@ -46,8 +46,8 @@ This project implements a shared memory circular buffer designed for fast messag
 ### How Orders Are Processed
 
 - The main program forks into two processes:
---- Parent writes a fixed number of messages into the buffer.
---- Child reads the same number of messages from the buffer.
+- Parent writes a fixed number of messages into the buffer.
+- Child reads the same number of messages from the buffer.
 - Both measure their individual latency in nanoseconds.
 - The circular buffer uses head/tail indices and wrap-around logic to manage slots.
 - 
