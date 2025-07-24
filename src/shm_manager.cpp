@@ -1,4 +1,4 @@
-#include "shm_manager.hpp"
+#include "../include/shm_manager.hpp"
 
 ShmManager::ShmManager(const char *name, size_t size, bool create_mem)
     : name_(name), size_(size), shm_fd_(-1), shm_ptr_(nullptr), owns_mem(create_mem)  {

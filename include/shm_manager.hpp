@@ -21,8 +21,8 @@ class ShmManager {
         ShmManager(const ShmManager&) = delete;
         ShmManager& operator=(const ShmManager&) = delete;
 
-        ShmManager(const ShmManager&) = delete;
-        ShmManager& operator=(const ShmManager&) = delete;
+        ShmManager(ShmManager&&) = delete;          
+        ShmManager& operator=(ShmManager&&) = delete;
 
         void* get_ptr() const { return shm_ptr_; };
         int get_fd() const{ return shm_fd_; };
